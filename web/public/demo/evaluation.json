@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "training_sessions": 3,
+  "held_out_sessions": 2,
+  "alignment_matches": 50,
+  "alignment_precision_pct": 100.0,
+  "correspondence_median_ms": 0.0,
+  "correspondence_p95_ms": 0.1,
+  "results": [
+    {
+      "session": 4,
+      "split": "validation",
+      "profile": "Deliberate",
+      "personalized_error_ms": 5,
+      "generic_error_ms": 265,
+      "take_agreement_pct": 100.0,
+      "take_decisions": 4,
+      "framing_zoom": 1.0,
+      "framing_error": 0.0
+    },
+    {
+      "session": 4,
+      "split": "validation",
+      "profile": "Tight",
+      "personalized_error_ms": 5,
+      "generic_error_ms": 235,
+      "take_agreement_pct": 100.0,
+      "take_decisions": 4,
+      "framing_zoom": 1.1,
+      "framing_error": 0.0
+    },
+    {
+      "session": 5,
+      "split": "test",
+      "profile": "Deliberate",
+      "personalized_error_ms": 5,
+      "generic_error_ms": 265,
+      "take_agreement_pct": 100.0,
+      "take_decisions": 4,
+      "framing_zoom": 1.0,
+      "framing_error": 0.0
+    },
+    {
+      "session": 5,
+      "split": "test",
+      "profile": "Tight",
+      "personalized_error_ms": 5,
+      "generic_error_ms": 235,
+      "take_agreement_pct": 100.0,
+      "take_decisions": 4,
+      "framing_zoom": 1.1,
+      "framing_error": 0.0
+    }
+  ],
+  "summary": "Measured transfer of pause spacing and repeated-take selection from three example sessions to two different tutorials. Audio correspondence is checked at the midpoint of each speech match, avoiding padded boundaries that cross a cut.",
+  "limitations": "Small engineered corpus with synthesized narration and simple cuts. The held-out sessions were used during integration debugging, so these are regression results, not a sealed final benchmark. Results establish mechanics, not real creator usefulness, broad visual style, or retention improvement."
+}

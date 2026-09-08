@@ -1,0 +1,163 @@
+{
+  "segments": [
+    {
+      "id": "s0",
+      "start": 0,
+      "end": 2.055,
+      "text": "Start with a descriptive title."
+    },
+    {
+      "id": "s1",
+      "start": 2.315,
+      "end": 4.415,
+      "text": "Explain each action out loud."
+    },
+    {
+      "id": "s3",
+      "start": 7.935,
+      "end": 10.255,
+      "text": "Use at least 16 -point text."
+    },
+    {
+      "id": "s4",
+      "start": 11.055,
+      "end": 13.115,
+      "text": "Do not rely on color alone."
+    },
+    {
+      "id": "s5",
+      "start": 13.395,
+      "end": 15.455,
+      "text": "Check every generated caption."
+    },
+    {
+      "id": "s6",
+      "start": 15.995,
+      "end": 18.635,
+      "text": "Include the essential keyboard shortcuts."
+    },
+    {
+      "id": "s8",
+      "start": 23.335,
+      "end": 25.375,
+      "text": "Review the video without audio."
+    },
+    {
+      "id": "s9",
+      "start": 25.655,
+      "end": 27.145,
+      "text": "Publish the accessible version."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "t2",
+      "kind": "take",
+      "start": 4.955,
+      "end": 6.785,
+      "removed": 1.83,
+      "reason": "Keep the first of equivalent repeated takes.",
+      "origin": "learned",
+      "evidence_count": 6
+    },
+    {
+      "id": "t7",
+      "kind": "take",
+      "start": 19.415,
+      "end": 21.945000000000004,
+      "removed": 2.53,
+      "reason": "Keep the first of equivalent repeated takes.",
+      "origin": "learned",
+      "evidence_count": 6
+    },
+    {
+      "id": "d0",
+      "kind": "pause",
+      "start": 1.445,
+      "end": 2.315,
+      "removed": 0.26,
+      "reason": "Keep 0.61s between phrases.",
+      "origin": "learned",
+      "evidence_count": 18
+    },
+    {
+      "id": "d1",
+      "kind": "pause",
+      "start": 3.805,
+      "end": 7.9350000000000005,
+      "removed": 3.52,
+      "reason": "Keep 0.61s between phrases.",
+      "origin": "learned",
+      "evidence_count": 18
+    },
+    {
+      "id": "d3",
+      "kind": "pause",
+      "start": 9.645,
+      "end": 11.055,
+      "removed": 0.8,
+      "reason": "Keep 0.61s between phrases.",
+      "origin": "learned",
+      "evidence_count": 18
+    },
+    {
+      "id": "d4",
+      "kind": "pause",
+      "start": 12.505,
+      "end": 13.395,
+      "removed": 0.28,
+      "reason": "Keep 0.61s between phrases.",
+      "origin": "learned",
+      "evidence_count": 18
+    },
+    {
+      "id": "d5",
+      "kind": "pause",
+      "start": 14.845,
+      "end": 15.995,
+      "removed": 0.54,
+      "reason": "Keep 0.61s between phrases.",
+      "origin": "learned",
+      "evidence_count": 18
+    },
+    {
+      "id": "d6",
+      "kind": "pause",
+      "start": 18.025000000000002,
+      "end": 23.334999999999997,
+      "removed": 4.7,
+      "reason": "Keep 0.61s between phrases.",
+      "origin": "learned",
+      "evidence_count": 18
+    },
+    {
+      "id": "d8",
+      "kind": "pause",
+      "start": 24.765,
+      "end": 25.654999999999998,
+      "removed": 0.28,
+      "reason": "Keep 0.61s between phrases.",
+      "origin": "learned",
+      "evidence_count": 18
+    }
+  ],
+  "duration": 16.765,
+  "source_duration": 31.0,
+  "pause_seconds": 0.61,
+  "take_preference": "first",
+  "visual": {
+    "zoom": 1.0,
+    "origin": "learned",
+    "session_count": 3
+  },
+  "mode": "personalized",
+  "warnings": [
+    "Repeated takes are removed only for exact transcript equivalence and a supported learned preference. Review all cuts."
+  ],
+  "asset_id": "4715648fa9159247205c49e3575fd0482fb1ff5ae4343a910a261ac95229f802",
+  "profile_version_id": "0e488b82dcb4486b9ec1933af3261f01",
+  "revision": 1,
+  "history": [],
+  "id": "734525f6033142aca6982ae2b8d86fc9",
+  "archived": false
+}

@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:02,220
+Start with a descriptive title. Explain each
+
+2
+00:00:02,220 --> 00:00:04,420
+action out loud. Use at least 16
+
+3
+00:00:04,420 --> 00:00:06,300
+-point text. Do not rely on color
+
+4
+00:00:06,300 --> 00:00:09,000
+alone. Check every generated caption. Include the
+
+5
+00:00:09,000 --> 00:00:11,900
+essential keyboard shortcuts. Review the video without
+
+6
+00:00:11,900 --> 00:00:13,920
+audio. Publish Publish the accessible version.

@@ -1,0 +1,10 @@
+{
+  "source_sha256": "a5e15f7f98605b3a5bf9c1d20106029cb3da136b84a94433f82a5b3995da475c",
+  "profile_version_id": null,
+  "plan_id": "7cbd1ff101f04ecbb88f8befc8c89920",
+  "revision": 1,
+  "video_sha256": "b88a1fdd83a514a75f6a61d4d73d3cd85196a7154b5db1df2c7ac7ccff6e8673",
+  "caption_words": 57,
+  "engine": "editdna-0.1",
+  "provenance": "Owned synthetic tutorial: Windows speech and original slides"
+}
