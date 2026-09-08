@@ -201,7 +201,7 @@ async def review_visual(id:str,request:Request):
         update=next((o for o in body['observations'] if o['match_id']==observation['match_id']),None)
         if not update:continue
         if update['status'] not in ('accepted','rejected','proposed'):raise ValueError('Invalid review status.')
-        if observation['status']=='unresolved' and update['status']=='accepted':raise ValueError('Unresolved visual matches cannot be accepted.')
+        if update['status']=='accepted' and not isinstance(observation.get('zoom'),(int,float)):raise ValueError('Unresolved visual matches cannot be accepted.')
         observation['status']=update['status']
     try:return store.revise('pair',id,int(version),{'visual':result})
     except ValueError as e:raise HTTPException(409,str(e))
@@ -283,7 +283,7 @@ async def undo_plan(id:str,request:Request):
     plan=store.get(id,'plan')
     if not plan['history']:raise ValueError('No earlier edit remains.')
     segments=plan['history'][-1]
-    try:return store.revise('plan',id,int(version),{'segments':segments,'duration':sum(s['end']-s['start'] for s in segments),'history':plan['history'][:-1],'visual':plan.get('visual_history',[plan.get('visual')])[-1],'visual_history':plan.get('visual_history',[])[:-1]})
+    try:return store.revise('plan',id,int(version),{'segments':segments,'duration':sum(s['end']-s['start'] for s in segments),'history':plan['history'][:-1],'visual':(plan.get('visual_history') or [plan.get('visual')])[-1],'visual_history':plan.get('visual_history',[])[:-1]})
     except ValueError as e:raise HTTPException(409,str(e))
 
 @app.get('/api/v1/exports/{id}/{filename}')

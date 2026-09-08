@@ -21,3 +21,12 @@
 - Upgraded the generated starter to patched compatible dependencies; npm audit reports zero vulnerabilities. The authored application lint and TypeScript checks are separate from upstream catalog lint.
 - Added startup/stop/setup scripts, restoreable demo data, source bundle, README, implementation status, and a demonstration walkthrough.
 - Hosted publication is blocked by a Sites connection/account mismatch: the previously created EditDNA project returns NOT_FOUND, while the currently visible account lists other projects. Preserved the original site ID and asked the user to reconnect the original account. No site recreation or unrelated site mutation performed.
+
+## Visual learning and public release
+
+- Implemented fixed centered framing estimation and review across corresponding frames; the learner requires three independent sources. It recovered 1.00x and 1.10x on the constructed corpus. Independent checks of actual rendered frames recovered both applied crops.
+- Added a server-timed human editing pilot with a quality gate and no fabricated savings. It is prepared; participant results are pending.
+- 21 tests pass. Application lint, TypeScript, build, desktop/mobile browser checks, fresh restore, and public demo-data access pass.
+- Sites access was restored, private publication succeeded, and the user explicitly approved making EditDNA public. URL: https://editdna-studio.adityajevoor.chatgpt.site
+- Public source and narrated walkthrough: https://github.com/jozai193/editdna/releases/latest
+- Submission write-up is prepared. No Devpost submission was performed.

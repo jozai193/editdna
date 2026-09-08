@@ -99,7 +99,11 @@ Code: MIT. Third-party packages, FFmpeg, speech models, and operating-system voi
 
 The application tests and HTTP upload/edit/export checks pass locally. The web dependency audit reports zero known vulnerabilities after patching the starter dependencies. Browser checks cover the editor, rendered playback, visual evidence, and trial preparation. 21 automated tests pass.
 
-Hosted publication is being prepared; the public release notes record the verified URL once deployed.
+Public demonstration: https://editdna-studio.adityajevoor.chatgpt.site
+
+Source and video release: https://github.com/jozai193/editdna/releases/latest
+
+The demonstration is publicly accessible without sign-in and presents actual generated outputs. Run the local app for uploads and the human timing pilot.
 
 ## Human timing pilot
 

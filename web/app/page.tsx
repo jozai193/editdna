@@ -196,13 +196,15 @@ export default function Home() {
           d.assets.find((a) => a.name.includes('accessible')) ||
           d.assets.find((a) => a.role === 'raw');
         setAssetId(a?.id || '');
-        setVersionId(d.versions[0]?.id || '');
+        const initialPlan = d.plans.find(
+          (p) => p.asset_id === a?.id && p.mode === 'personalized',
+        );
+        setVersionId(
+          initialPlan?.profile_version_id || d.versions[0]?.id || '',
+        );
         setProfileId(d.profiles[0]?.id || '');
         setPairId(d.pairs[0]?.id || '');
-        setPlanId(
-          d.plans.find((p) => p.asset_id === a?.id && p.mode === 'personalized')
-            ?.id || '',
-        );
+        setPlanId(initialPlan?.id || '');
         const ev = await fetch(
           isLocal ? `${base}/evaluation` : '/demo/evaluation.json',
         );
@@ -437,6 +439,7 @@ export default function Home() {
               >
                 <Download size={15} /> Get local app
               </Link>
+              <Link href="/downloads/editdna-demo.mp4">Watch walkthrough</Link>
             </div>
           )}
           {error && (
@@ -491,7 +494,8 @@ export default function Home() {
                       disabled={!assetId || !versionId || !!busy}
                       onClick={() => generate('personalized')}
                     >
-                      <Scissors /> Create my edit
+                      <Scissors />{' '}
+                      {local ? 'Create my edit' : 'View example edit'}
                     </Button>
                   </div>
                   {asset ? (
@@ -1220,7 +1224,10 @@ export default function Home() {
                           </div>
                           <div className="match-list">
                             {pair.alignment.matches.map((m: Match) => (
-                              <div className="match-row" key={`${pair.id}-${pair.revision}-${m.id}`}>
+                              <div
+                                className="match-row"
+                                key={`${pair.id}-${pair.revision}-${m.id}`}
+                              >
                                 <button
                                   className="segment-play"
                                   aria-label="Play corresponding match"
@@ -1542,7 +1549,10 @@ export default function Home() {
                               <span>
                                 Take agreement: {r.take_agreement_pct}%
                               </span>
-                              <span>Framing: {r.framing_zoom?.toFixed(2)}× · reference error {r.framing_error?.toFixed(3)}</span>
+                              <span>
+                                Framing: {r.framing_zoom?.toFixed(2)}× ·
+                                reference error {r.framing_error?.toFixed(3)}
+                              </span>
                               <span className="match-status accepted">
                                 {r.personalized_error_ms < r.generic_error_ms
                                   ? 'Closer to reference'

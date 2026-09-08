@@ -40,13 +40,13 @@ React/Vinext review interface → local FastAPI service → durable SQLite job q
 The constructed corpus contains five original slide tutorials with synthesized narration. Three sessions train the profiles; two different sessions evaluate transfer. The regression run recovered 50/50 accepted audio correspondences within 100 ms, matched all 16 take decisions, and achieved a 5 ms pause-target error versus 235–265 ms for the generic preset. Both demonstrated framing preferences (1.00× and 1.10×) transferred with zero estimated zoom error. These tutorials were used during integration debugging, so this is not a sealed benchmark.
 
 ## Public Demo Link
-Publication in progress; insert the verified URL before submitting.
+https://editdna-studio.adityajevoor.chatgpt.site — public, with anonymous access verified. This is a recorded demonstration; use the local app for new media processing.
 
 ## Public Repository Link
-Publication in progress; intended repository: https://github.com/jozai193/editdna
+https://github.com/jozai193/editdna — public. Complete source bundle: https://github.com/jozai193/editdna/releases/latest
 
 ## Demo Video
-`docs/submission/editdna-demo.mp4` — narrated walkthrough using actual application captures and an actual rendered output. Synthesized narration is disclosed. Add a public video link when uploaded.
+`docs/submission/editdna-demo.mp4` — narrated walkthrough using actual application captures and an actual rendered output. Synthesized narration is disclosed. Public MP4: https://editdna-studio.adityajevoor.chatgpt.site/downloads/editdna-demo.mp4
 
 ## Screenshot Shot List
 - `docs/submission/studio.png`: review workspace and learned framing.
